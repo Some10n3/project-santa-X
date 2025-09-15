@@ -4,28 +4,26 @@ const Home: React.FC = () => (
   <main>
     {/* Hero Section */}
     <section style={{ background: '#222', color: '#fff', padding: '3rem 1rem', textAlign: 'center' }}>
-      <img src="/logo.png" alt="Game Logo" style={{ maxWidth: 200 }} />
-      <h2>Welcome to My Game!</h2>
-      <p>A mysterious adventure awaits. Discover the secrets and escape the nightmare!</p>
-      <button style={{ marginTop: '1rem', padding: '0.75rem 2rem', fontSize: '1.1rem' }}>Buy Now</button>
+      <img src="/assets/logo.png" alt="Game Logo" style={{ maxWidth: 200 }} />
     </section>
 
     {/* About Section */}
     <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
       <h3>About the Game</h3>
-      <p>
-        Explore a dark and whimsical world filled with puzzles, dangers, and secrets. 
-        Can you survive and uncover the truth?
-      </p>
+      <ul>
+        <li>Christmas-themed horror game</li>
+        <li>First-person perspective from a small elf's viewpoint</li>
+        <li>Navigation through darkness. The player has to navigate their way through the map, avoiding threats with limited sight and sound.</li>
+      </ul>
     </section>
 
     {/* Gallery Section */}
     <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src="/screenshots/1.jpg" alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
-        <img src="/screenshots/2.jpg" alt="Screenshot 2" style={{ width: 200, borderRadius: 8 }} />
-        <img src="/screenshots/3.jpg" alt="Screenshot 3" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/assets/screenshots/1.jpg" alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/assets/screenshots/2.jpg" alt="Screenshot 2" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/assets/screenshots/3.jpg" alt="Screenshot 3" style={{ width: 200, borderRadius: 8 }} />
       </div>
     </section>
 
