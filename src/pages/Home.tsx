@@ -10,11 +10,9 @@ const Home: React.FC = () => (
     {/* About Section */}
     <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
       <h3>About the Game</h3>
-      <ul style={{ listStyleType: 'none', padding: 0, maxWidth: 600, margin: '0 auto', textAlign: 'left' }}>
-        <li>Christmas-themed horror game</li>
-        <li>First-person perspective from a small elf's viewpoint</li>
-        <li>Navigation through darkness. The player has to navigate their way through the map, avoiding threats with limited sight and sound.</li>
-      </ul>
+      <p>
+        Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
+      </p>
     </section>
 
     {/* Gallery Section */}
