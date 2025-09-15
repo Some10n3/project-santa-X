@@ -8,7 +8,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* About Section */}
-    <section style={{ background: '#181818', color: '#eee'}}>
+    <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
       <h3>About the Game</h3>
       <ul style={{ listStyleType: 'none', padding: 0, maxWidth: 600, margin: '0 auto', textAlign: 'left' }}>
         <li>Christmas-themed horror game</li>
@@ -18,7 +18,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Gallery Section */}
-    <section style={{ background: '#222', color: '#fff'}}>
+    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
@@ -27,8 +27,22 @@ const Home: React.FC = () => (
       </div>
     </section>
 
+    {/* Mood and Aesthetic  */}
+    <section style={{ background: '#181818', color: '#fff', padding: '2rem 1rem', textAlign: 'center' }}>
+      <h3 style={{ textAlign: 'center' }}>Mood and Aesthetic</h3>
+      <p>
+        Atmospheric Horror, focused on building the horror feelings and less on directly scaring the players
+      </p>
+      <p>
+        An experience that builds a sense of unease, psychological tension through eerie environments and unsettling ambient sound
+      </p>
+      <p>
+        The game features a retro theme with plain colors to enhance its minimalist, haunting aesthetic
+      </p>
+    </section>
+
     {/* Character Section */}
-    <section style={{ background: '#181818', color: '#fff'}}>
+    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Characters</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 200, borderRadius: 8 }} />
