@@ -18,8 +18,22 @@ const Home: React.FC = () => (
       </div>
     </section>
 
-    {/* Gallery Section */}
+    {/* Key Features  */}
     <section style={{ background: '#222', color: '#fff', padding: '1rem' }}>
+      <h3 style={{ textAlign: 'center' }}>Key Features</h3>
+      <p>
+        Christmas-themed horror game
+      </p>
+      <p>
+        First-person perspective from a small elf's viewpoint
+      </p>
+      <p>
+        Navigation through darkness. The player has to navigate their way through the map, avoiding threats with limited sight and sound.
+      </p>
+    </section>
+
+    {/* Gallery Section */}
+    <section style={{ background: '#181818', color: '#fff', padding: '1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 400, borderRadius: 8 }} />
@@ -29,7 +43,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Mood and Aesthetic  */}
-    <section style={{ background: '#181818', color: '#fff', padding: '1rem', textAlign: 'center' }}>
+    <section style={{ background: '#222', color: '#fff', padding: '1rem', textAlign: 'center' }}>
       <h3 style={{ textAlign: 'center' }}>Mood and Aesthetic</h3>
       <p>
         Atmospheric Horror, focused on building the horror feelings and less on directly scaring the players
@@ -43,7 +57,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Character Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '1rem' }}>
+    <section style={{ background: '#181818', color: '#fff', padding: '1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Characters</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 400, borderRadius: 8 }} />
@@ -53,7 +67,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Newsletter Section */}
-    <section style={{ background: '#181818', color: '#eee', padding: '1rem', textAlign: 'center' }}>
+    <section style={{ background: '#222', color: '#eee', padding: '1rem', textAlign: 'center' }}>
       <h3>Subscribe for Updates</h3>
       <form>
         <input
