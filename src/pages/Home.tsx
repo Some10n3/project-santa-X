@@ -11,9 +11,11 @@ const Home: React.FC = () => (
     <section style={{ background: '#181818', color: '#eee', padding: '1rem', textAlign: 'center' }}>
       <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200, borderRadius: 8 }} />
       <h3>About the Game</h3>
-      <p>
-        Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
-      </p>
+      <div style={{ justifyContent: 'center', display: 'flex' }}>
+        <p style={{ width: '60%', margin: '0 auto'}}>
+          Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
+        </p>
+      </div>
     </section>
 
     {/* Gallery Section */}
