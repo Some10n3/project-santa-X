@@ -2,13 +2,14 @@ import React from 'react';
 
 const Home: React.FC = () => (
   <main>
-    {/* Hero Section */}
+    {/* Hero Section
     <section style={{ background: '#222', color: '#fff', textAlign: 'center' }}>
-    <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200, borderRadius: 8 }} />
-    </section>
+    
+    </section> */}
 
     {/* About Section */}
-    <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
+    <section style={{ background: '#181818', color: '#eee', padding: '1rem', textAlign: 'center' }}>
+      <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200, borderRadius: 8 }} />
       <h3>About the Game</h3>
       <p>
         Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
@@ -16,7 +17,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Gallery Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
+    <section style={{ background: '#222', color: '#fff', padding: '1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 400, borderRadius: 8 }} />
@@ -26,7 +27,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Mood and Aesthetic  */}
-    <section style={{ background: '#181818', color: '#fff', padding: '2rem 1rem', textAlign: 'center' }}>
+    <section style={{ background: '#181818', color: '#fff', padding: '1rem', textAlign: 'center' }}>
       <h3 style={{ textAlign: 'center' }}>Mood and Aesthetic</h3>
       <p>
         Atmospheric Horror, focused on building the horror feelings and less on directly scaring the players
@@ -40,7 +41,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Character Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
+    <section style={{ background: '#222', color: '#fff', padding: '1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Characters</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 400, borderRadius: 8 }} />
@@ -50,7 +51,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Newsletter Section */}
-    <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
+    <section style={{ background: '#181818', color: '#eee', padding: '1rem', textAlign: 'center' }}>
       <h3>Subscribe for Updates</h3>
       <form>
         <input
