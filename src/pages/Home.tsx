@@ -1,81 +1,129 @@
 import React from 'react';
 
+// Add Google Fonts
+const fontLink = document.createElement('link');
+fontLink.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap';
+fontLink.rel = 'stylesheet';
+document.head.appendChild(fontLink);
+
+const sectionStyle = {
+  background: 'rgba(30, 30, 40, 0.95)',
+  color: '#eee',
+  margin: '2rem auto',
+  borderRadius: '16px',
+  boxShadow: '0 4px 24px rgba(0,0,0,0.5)',
+  maxWidth: '900px',
+  padding: '2rem',
+  fontFamily: 'Montserrat, sans-serif',
+};
+
+const accentColor = '#e63946';
+
+const headingStyle = {
+  color: accentColor,
+  fontWeight: 700,
+  letterSpacing: '1px',
+  marginBottom: '1rem',
+  fontFamily: 'Montserrat, sans-serif',
+};
+
+const imageStyle = {
+  width: 320,
+  borderRadius: 12,
+  boxShadow: '0 2px 12px rgba(0,0,0,0.4)',
+  transition: 'transform 0.2s, box-shadow 0.2s',
+};
+
+const imageHoverStyle = {
+  transform: 'scale(1.04)',
+  boxShadow: '0 6px 24px rgba(0,0,0,0.6)',
+};
+
 const Home: React.FC = () => (
-  <main>
+  <main style={{
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #181818 0%, #23243a 100%)',
+    padding: '2rem 0',
+    fontFamily: 'Montserrat, sans-serif',
+  }}>
     {/* Hero Section
     <section style={{ background: '#222', color: '#fff', textAlign: 'center' }}>
     
     </section> */}
 
     {/* About Section */}
-    <section style={{ background: '#181818', color: '#eee', padding: '1rem', textAlign: 'center' }}>
-      <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200, borderRadius: 8 }} />
-      <h3>About the Game</h3>
-      <div style={{ justifyContent: 'center', display: 'flex' }}>
-        <p style={{ width: '60%', margin: '0 auto'}}>
-          Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
-        </p>
-      </div>
+    <section style={{ ...sectionStyle, textAlign: 'center' }}>
+      <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 180, borderRadius: 12, marginBottom: '1rem', boxShadow: '0 2px 12px rgba(0,0,0,0.4)' }} />
+      <h2 style={headingStyle}>About the Game</h2>
+      <p style={{ maxWidth: 600, margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.7 }}>
+        Imagine a Christmas game where you play as an elf, handpicked by Santa to deliver gifts. But with each assignment, the destinations become stranger and more surreal—twisting from a seemingly normal house to bizarre, unsettling places. As the journey unfolds, you begin to sense something is off, leading to a chilling mystery where you must uncover the true identity of Santa himself. Blending festive cheer with escalating suspense and horror, this game offers a unique holiday adventure that keeps players guessing until the very end.
+      </p>
     </section>
 
     {/* Key Features  */}
-    <section style={{ background: '#222', color: '#fff', padding: '1rem' }}>
-      <h3 style={{ textAlign: 'center' }}>Key Features</h3>
-      <p>
-        Christmas-themed horror game
-      </p>
-      <p>
-        First-person perspective from a small elf's viewpoint
-      </p>
-      <p>
-        Navigation through darkness. The player has to navigate their way through the map, avoiding threats with limited sight and sound.
-      </p>
+    <section style={sectionStyle}>
+      <h2 style={headingStyle}>Key Features</h2>
+      <ul style={{ listStyle: 'disc', paddingLeft: '2rem', fontSize: '1.1rem', lineHeight: 1.7 }}>
+        <li>Christmas-themed horror game</li>
+        <li>First-person perspective from a small elf's viewpoint</li>
+        <li>Navigate through darkness, avoiding threats with limited sight and sound</li>
+      </ul>
     </section>
 
     {/* Gallery Section */}
-    <section style={{ background: '#181818', color: '#fff', padding: '1rem' }}>
-      <h3 style={{ textAlign: 'center' }}>Gallery</h3>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 400, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/screenshots/2.png'} alt="Screenshot 2" style={{ width: 400, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/screenshots/3.png'} alt="Screenshot 3" style={{ width: 400, borderRadius: 8 }} />
+    <section style={{ ...sectionStyle, background: 'rgba(24,24,32,0.98)' }}>
+      <h2 style={headingStyle}>Gallery</h2>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        {[1,2,3].map(i => (
+          <img
+            key={i}
+            src={process.env.PUBLIC_URL + `/screenshots/${i}.png`}
+            alt={`Screenshot ${i}`}
+            style={imageStyle}
+            onMouseOver={e => Object.assign(e.currentTarget.style, imageHoverStyle)}
+            onMouseOut={e => Object.assign(e.currentTarget.style, imageStyle)}
+          />
+        ))}
       </div>
     </section>
 
     {/* Mood and Aesthetic  */}
-    <section style={{ background: '#222', color: '#fff', padding: '1rem', textAlign: 'center' }}>
-      <h3 style={{ textAlign: 'center' }}>Mood and Aesthetic</h3>
-      <p>
-        Atmospheric Horror, focused on building the horror feelings and less on directly scaring the players
-      </p>
-      <p>
-        An experience that builds a sense of unease, psychological tension through eerie environments and unsettling ambient sound
-      </p>
-      <p>
-        The game features a retro theme with plain colors to enhance its minimalist, haunting aesthetic
-      </p>
+    <section style={sectionStyle}>
+      <h2 style={headingStyle}>Mood and Aesthetic</h2>
+      <ul style={{ listStyle: 'disc', paddingLeft: '2rem', fontSize: '1.1rem', lineHeight: 1.7 }}>
+        <li>Atmospheric horror, focused on building suspense and unease</li>
+        <li>Psychological tension through eerie environments and ambient sound</li>
+        <li>Retro theme with plain colors for a minimalist, haunting aesthetic</li>
+      </ul>
     </section>
 
     {/* Character Section */}
-    <section style={{ background: '#181818', color: '#fff', padding: '1rem' }}>
-      <h3 style={{ textAlign: 'center' }}>Characters</h3>
-      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 400, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/characters/2.png'} alt="Character 2" style={{ width: 400, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/characters/3.png'} alt="Character 3" style={{ width: 400, borderRadius: 8 }} />
+    <section style={{ ...sectionStyle, background: 'rgba(24,24,32,0.98)' }}>
+      <h2 style={headingStyle}>Characters</h2>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+        {[1,2,3].map(i => (
+          <img
+            key={i}
+            src={process.env.PUBLIC_URL + `/characters/${i}.png`}
+            alt={`Character ${i}`}
+            style={imageStyle}
+            onMouseOver={e => Object.assign(e.currentTarget.style, imageHoverStyle)}
+            onMouseOut={e => Object.assign(e.currentTarget.style, imageStyle)}
+          />
+        ))}
       </div>
     </section>
 
     {/* Newsletter Section */}
-    <section style={{ background: '#222', color: '#eee', padding: '1rem', textAlign: 'center' }}>
-      <h3>Subscribe for Updates</h3>
+    <section style={{ ...sectionStyle, textAlign: 'center', background: 'rgba(30,30,40,0.95)' }}>
+      <h2 style={headingStyle}>Subscribe for Updates</h2>
       <form>
         <input
           type="email"
           placeholder="Your email"
-          style={{ padding: '0.5rem', fontSize: '1rem', borderRadius: 4, border: 'none', marginRight: '0.5rem' }}
+          style={{ padding: '0.75rem', fontSize: '1.1rem', borderRadius: 6, border: 'none', marginRight: '0.5rem', width: '220px', background: '#23243a', color: '#eee' }}
         />
-        <button type="submit" style={{ padding: '0.5rem 1.5rem', fontSize: '1rem', borderRadius: 4, border: 'none', background: '#e63946', color: '#fff' }}>
+        <button type="submit" style={{ padding: '0.75rem 2rem', fontSize: '1.1rem', borderRadius: 6, border: 'none', background: accentColor, color: '#fff', fontWeight: 700, letterSpacing: '1px', boxShadow: '0 2px 8px rgba(0,0,0,0.3)', cursor: 'pointer' }}>
           Subscribe
         </button>
       </form>
