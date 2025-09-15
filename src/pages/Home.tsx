@@ -21,9 +21,9 @@ const Home: React.FC = () => (
     <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/screenshots/2.png'} alt="Screenshot 2" style={{ width: 200, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/screenshots/3.png'} alt="Screenshot 3" style={{ width: 200, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 400, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/screenshots/2.png'} alt="Screenshot 2" style={{ width: 400, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/screenshots/3.png'} alt="Screenshot 3" style={{ width: 400, borderRadius: 8 }} />
       </div>
     </section>
 
@@ -45,14 +45,14 @@ const Home: React.FC = () => (
     <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Characters</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 200, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/characters/2.png'} alt="Character 2" style={{ width: 200, borderRadius: 8 }} />
-        <img src={process.env.PUBLIC_URL + '/characters/3.png'} alt="Character 3" style={{ width: 200, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 400, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/characters/2.png'} alt="Character 2" style={{ width: 400, borderRadius: 8 }} />
+        <img src={process.env.PUBLIC_URL + '/characters/3.png'} alt="Character 3" style={{ width: 400, borderRadius: 8 }} />
       </div>
     </section>
 
     {/* Newsletter Section */}
-    {/* <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
+    <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
       <h3>Subscribe for Updates</h3>
       <form>
         <input
@@ -64,7 +64,7 @@ const Home: React.FC = () => (
           Subscribe
         </button>
       </form>
-    </section> */}
+    </section>
   </main>
 );
 
