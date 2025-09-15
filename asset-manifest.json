@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/project-santa-X/static/css/main.8e814ddc.css",
-    "main.js": "/project-santa-X/static/js/main.c46c498f.js",
+    "main.js": "/project-santa-X/static/js/main.e3808982.js",
     "index.html": "/project-santa-X/index.html",
     "main.8e814ddc.css.map": "/project-santa-X/static/css/main.8e814ddc.css.map",
-    "main.c46c498f.js.map": "/project-santa-X/static/js/main.c46c498f.js.map"
+    "main.e3808982.js.map": "/project-santa-X/static/js/main.e3808982.js.map"
   },
   "entrypoints": [
     "static/css/main.8e814ddc.css",
-    "static/js/main.c46c498f.js"
+    "static/js/main.e3808982.js"
   ]
 }
