@@ -3,12 +3,12 @@ import React from 'react';
 const Home: React.FC = () => (
   <main>
     {/* Hero Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '3rem 1rem', textAlign: 'center' }}>
-    <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200 }} />
+    <section style={{ background: '#222', color: '#fff', textAlign: 'center' }}>
+    <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Game Logo" style={{ maxWidth: 200, borderRadius: 8 }} />
     </section>
 
     {/* About Section */}
-    <section style={{ background: '#181818', color: '#eee', padding: '2rem 1rem', textAlign: 'center' }}>
+    <section style={{ background: '#181818', color: '#eee'}}>
       <h3>About the Game</h3>
       <ul style={{ listStyleType: 'none', padding: 0, maxWidth: 600, margin: '0 auto', textAlign: 'left' }}>
         <li>Christmas-themed horror game</li>
@@ -18,7 +18,7 @@ const Home: React.FC = () => (
     </section>
 
     {/* Gallery Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
+    <section style={{ background: '#222', color: '#fff'}}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/screenshots/1.png'} alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
@@ -28,8 +28,8 @@ const Home: React.FC = () => (
     </section>
 
     {/* Character Section */}
-    <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
-      <h3 style={{ textAlign: 'center' }}>Gallery</h3>
+    <section style={{ background: '#181818', color: '#fff'}}>
+      <h3 style={{ textAlign: 'center' }}>Characters</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <img src={process.env.PUBLIC_URL + '/characters/1.png'} alt="Character 1" style={{ width: 200, borderRadius: 8 }} />
         <img src={process.env.PUBLIC_URL + '/characters/2.png'} alt="Character 2" style={{ width: 200, borderRadius: 8 }} />
