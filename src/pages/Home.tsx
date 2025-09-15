@@ -4,7 +4,7 @@ const Home: React.FC = () => (
   <main>
     {/* Hero Section */}
     <section style={{ background: '#222', color: '#fff', padding: '3rem 1rem', textAlign: 'center' }}>
-      <img src="/assets/logo.png" alt="Game Logo" style={{ maxWidth: 200 }} />
+      <img src="/logo.png" alt="Game Logo" style={{ maxWidth: 200 }} />
     </section>
 
     {/* About Section */}
@@ -21,9 +21,9 @@ const Home: React.FC = () => (
     <section style={{ background: '#222', color: '#fff', padding: '2rem 1rem' }}>
       <h3 style={{ textAlign: 'center' }}>Gallery</h3>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <img src="/assets/screenshots/1.jpg" alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
-        <img src="/assets/screenshots/2.jpg" alt="Screenshot 2" style={{ width: 200, borderRadius: 8 }} />
-        <img src="/assets/screenshots/3.jpg" alt="Screenshot 3" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/screenshots/1.png" alt="Screenshot 1" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/screenshots/2.png" alt="Screenshot 2" style={{ width: 200, borderRadius: 8 }} />
+        <img src="/screenshots/3.png" alt="Screenshot 3" style={{ width: 200, borderRadius: 8 }} />
       </div>
     </section>
 
